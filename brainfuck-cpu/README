@@ -1,0 +1,17 @@
+brainfuck.circ contains a CPU which runs brainfuck as its native language.
+
+Output is provided via a simulated terminal in the top right corner, and input 
+can be typed into the small bar below. These are accessed via the '.' and ',' 
+brainfuck instructions.
+
+The default program loaded outputs fibonacci numbers in the terminal. To run 
+it, use the "normal" logisim commands: press <Ctrl+R> to reset the simulation
+and <Ctrl+K> to enable clock ticks. I suggest running the CPU above 256 Hz to 
+see anything happen.
+
+To load a different program, left click the ROM labeled "PROGRAM MEMORY", and
+select "(click to edit)" in the lower left context menu. In the hex editing 
+window that opens, select the "Open..." open at the bottom left, and choose a
+.bfasm program from the /test-programs folder.
+The .bfasm files are nothing more than regular brainfuck programs imported into
+logisim's custom hex format.
